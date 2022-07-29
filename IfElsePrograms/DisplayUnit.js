@@ -1,6 +1,6 @@
 let number = 100;
 console.log("Display the Unit of Number");
-console.log("number = "+number);
+console.log("Number = "+number);
 if(number == 1){
     console.log("One");
 }else if(number == 10){
