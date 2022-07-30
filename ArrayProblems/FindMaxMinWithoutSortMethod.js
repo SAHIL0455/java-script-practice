@@ -7,7 +7,7 @@ function randomNumber() {
 for (let index = 0; index <= generatedNumber; index++) {
     numberArray.push(randomNumber());
 }
-
+// using bubble sort method
 for(let i = 0;i<numberArray.length;i++){
     for (let j = 1; j < (numberArray.length - i); j++){
          if (numberArray[j-1]>numberArray[j]) {
