@@ -7,7 +7,17 @@ function randomNumber() {
 for (let index = 0; index <= generatedNumber; index++) {
     numberArray.push(randomNumber());
 }
-numberArray.sort();
+
+for(let i = 0;i<numberArray.length;i++){
+    for (let j = 1; j < (numberArray.length - i); j++){
+         if (numberArray[j-1]>numberArray[j]) {
+            let temp = numberArray[j-1];
+            numberArray[j-1] = numberArray[j];  
+            numberArray[j] = temp;
+         }
+    }
+}
+
 console.log("Array is = ")
 for (let index = 0; index < numberArray.length; index++) {
   console.log(numberArray[index]);
